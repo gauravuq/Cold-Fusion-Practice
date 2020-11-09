@@ -1,0 +1,13 @@
+Docker Setup:
+  - Start Lucee Command Home:
+    - docker run -d --name lucee
+    - -v "/mnt/10805C1A805C089C/Git Projects/Cold-Fusion-Practice/webroot":/var/www
+    - -v "/mnt/10805C1A805C089C/Git Projects/Cold-Fusion-Practice/lucee_server_context":/opt/lucee/server/lucee-server/context
+    - -p 8888:8888
+    - lucee/lucee:latest
+  - Start Lucee Command Work:
+    - docker run -d --name lucee
+    - -v "/Users/gaurav/lucee-git/Cold-Fusion-Practice/webroot":/var/www
+    - -v "/Users/gaurav/lucee-git/Cold-Fusion-Practice/lucee_server_context":/opt/lucee/server/lucee-server/context
+    - -p 8888:8888
+    - lucee/lucee:latest

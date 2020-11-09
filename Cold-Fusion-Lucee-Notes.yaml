@@ -1,0 +1,47 @@
+Notes:
+  - https://docs.lucee.org/
+  - https://cfdocs.org/
+  - https://modern-cfml.ortusbooks.com/
+  - https://rorylaitila.gitbooks.io/lucee/content/
+  - CFML to JavaByteCode to JVM
+  - There are Two Context:
+    - Server Context: available to all the Web(Domain) Contexts
+    - Web(Domain)Context: a context for our app;
+  - Variables:
+    - assignment happen from right to left and not the opposite;
+    - Line terminator for cold fusion is ';'
+    - a = 1; b= 1.4; c =[1,2,3,4,5] array; d ={key="hello",today=now()} struct
+    - CFML is case insensitive; a variable and A variable name is the same;
+    - change variables type dynamically; a=1; a =1.23; a=[1,23,4]
+    - how to write output to console, html or a file https://cfdocs.org/writedump
+    - CaseSensitivity:
+      - A is equal to a in CFML;
+    - isDefined(): is it even present in the scope;
+    - idNull(): is it even null or not;
+    - Variable Types:
+      - Arrays: [value,value,value,value]
+      - Struct: {key:value,key:value}
+      - Integer: 1
+      - Float: 1.2
+      - Boolean: false
+      - String: "lol"
+      - Query:
+      - List: "asdf,sadfas,fasd,fasdf" (a string with delimiters assigned to a variable);
+      - Date:
+     - All the collection functions: https://cfdocs.org/member
+  - Components:
+    - there is support for static variables and functions ;
+  - Properties:
+    - member variables of a class;
+  - Functions:
+    - First Class functions : functions can be passed around like other data types;
+  - Try/Catch/Finally:
+    - try{}catch(any e){}finally{}
+  - Scopes:
+    - Component Scopes:
+      - https://modern-cfml.ortusbooks.com/cfml-language/components
+    - Function Scopes:
+      - https://modern-cfml.ortusbooks.com/cfml-language/components/functions
+    -this & variables & arguments VVIMP;
+
+
